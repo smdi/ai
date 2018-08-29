@@ -5,7 +5,7 @@ var fs  =  require('fs');
 
 var app      =  express();
 
-app.use(express.static(__dirname+"/../ai/public"));
+app.use(express.static(__dirname+"ai/public"));
 
 
 
