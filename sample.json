@@ -1,0 +1,4 @@
+{  
+    "data":[{"pcode":101,"pname":"mouse","pqty":89,"pprice":500},{"pcode":102,"pname":"keyboard","pqty":99,"pprice":800},{"pcode":103,"pname":"usb","pqty":78,"pprice":480},{"pcode":104,"pname":"hdmi to vga","pqty":90,"pprice":300},{"pcode":105,"pname":"screen protector","pqty":89,"pprice":100},{"pcode":106,"pname":"camera","pqty":89,"pprice":5000},{"pcode":107,"pname":"ldr","pqty":99,"pprice":8},{"pcode":108,"pname":"power bank","pqty":78,"pprice":480},{"pcode":109,"pname":"usb cable","pqty":90,"pprice":300},{"pcode":110,"pname":"pillow","pqty":89,"pprice":100},{"pcode":111,"pname":"water heaters","pqty":89,"pprice":500},{"pcode":112,"pname":"Suitcase","pqty":99,"pprice":800},{"pcode":113,"pname":"bagpacks","pqty":78,"pprice":480},{"pcode":114,"pname":"Lockers","pqty":90,"pprice":300},{"pcode":115,"pname":"Projectors","pqty":89,"pprice":100}]
+ 
+  }  
