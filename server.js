@@ -7,6 +7,12 @@ var app      =  express();
 
 app.use(express.static(__dirname+"/../ai/public"));
 
+
+app.get('/',function (req, res) {
+        res.sendFile(__dirname+"/../ai/public/index.html");
+   });
+
+
 app.get("/shopping",function(req,res){
 
    fs.readFile("./sample.json",function(err,data){
