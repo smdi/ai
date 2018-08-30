@@ -1,7 +1,8 @@
 
 var express  =  require('express');
-
+var path     =  require('path'); 
 var fs  =  require('fs');
+
 
 var app      =  express();
 
@@ -9,7 +10,7 @@ app.use(express.static(__dirname+"/../ai/public"));
 
 
 app.get('/',function (req, res) {
-        res.sendFile(__dirname+"/../ai/public/index.html");
+        res.sendFile(path.resolve("ai/public/index.html"));
    });
 
 
