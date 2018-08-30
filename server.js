@@ -5,10 +5,13 @@ var fs  =  require('fs');
 
 var app      =  express();
 
-app.use(express.static(__dirname+"ai/public"));
+app.use(express.static(__dirname+"/../ai/public"));
 
 
+ app.get('/',function (req, res) {
+               res.sendFile(path + '/public/index.html');
 
+          });
 
 
 app.get("/shopping",function(req,res){
@@ -24,7 +27,7 @@ app.get("/shopping",function(req,res){
 
 
 
-app.listen(process.env.PORT || 8999 ,()=>console.log('\nserver listening'));
+app.listen(process.env.PORT || 5000 ,()=>console.log('\nserver listening'));
 
 
 
