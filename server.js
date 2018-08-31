@@ -13,9 +13,7 @@ app.get('/',function (req, res) {
         res.sendFile(path.resolve("public/index.html"));
    });
 
-app.get('/images',function (req, res) {
-        res.sendFile(path.resolve("public/onli.png"));
-   });
+
 
 
 app.get("/shopping",function(req,res){
