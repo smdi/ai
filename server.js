@@ -13,9 +13,8 @@ app.get('/',function (req, res) {
         res.sendFile(path.resolve("public/index.html"));
    });
 
-app.get('/image',function (req, res) {
-        app.use(express.static(__dirname+"/../ai/public/images"));
-        res.sendFile(path.resolve("public/images/onli.png"));
+app.get('/images',function (req, res) {
+        res.sendFile(path.resolve("./onli.png"));
    });
 
 

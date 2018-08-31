@@ -10,14 +10,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
    <body>
-
+  
+    <h1>{{img}}</h1>
     <style>
      
        body{
             width: 100%;
             /* background-color: white; */
             align-items: center;
-            background-image: url("images/onli.png"); 
+            /* background-image: url("images/onli.png");  */
         }
         button{
             border-top: none;
@@ -219,7 +220,7 @@ mouseenter : function(){
 
               this.getImage  = function(){
                 
-                return $http.get("https://hidden-lake-43544.herokuapp.com/image")
+                return $http.get("https://hidden-lake-43544.herokuapp.com/images")
                 
                 .then(
                         
