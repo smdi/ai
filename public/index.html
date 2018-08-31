@@ -15,7 +15,7 @@
             width: 100%;
             background-color: lightgray;
             align-items: center;
-            background-image: url("/../ai/public/images/onli.png"); 
+            /* background-image: url("/../ai/public/images/onli.png");  */
         }
         button{
             border-top: none;
@@ -213,6 +213,27 @@ mouseenter : function(){
                 
                 );
               }
+
+
+              this.getImage  = function(){
+                
+                return $http.get("https://hidden-lake-43544.herokuapp.com/image")
+                
+                .then(
+                        
+                
+                function(posRes){
+                    
+                      return posRes;
+                }
+                ,
+                function(errRes){
+                    
+                    return errRes;
+                }
+                
+                );
+              }
              
    });
      
@@ -224,6 +245,12 @@ mouseenter : function(){
             
         });
         
+        staticservice.getImage().then(function(res){
+            
+            $scope.img = res;
+            
+        });
+
     });
         
         
@@ -231,7 +258,7 @@ mouseenter : function(){
     
     <div id="divhome" class="fademe"  width='100%' height="100%" style='background-color: white;margin-top: 5%;'>
 
-     <image src="images/onli.png" style="margin-left: 42%;margin-top: 20px" ></image>
+     <image ng-bind="img" style="margin-left: 42%;margin-top: 20px" ></image>
 
      <h1 style="color:black;font-size: 20px;" style="margin-left: 42%">Onlineshop Pvt Ltd. is an Indian electronic commerce company based in Bengaluru, India. Founded by Sachin Bansal and Binny Bansal (no relation) in 2007, the company initially focused on book sales, before expanding into other product categories such as consumer electronics, fashion, and lifestyle products.
 
