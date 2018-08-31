@@ -14,7 +14,7 @@ app.get('/',function (req, res) {
    });
 
 app.get('/image',function (req, res) {
-        res.sendFile(path.resolve("public/images/onli.png"));
+        res.sendFile(path.resolve("public/onli.png"));
    });
 
 
